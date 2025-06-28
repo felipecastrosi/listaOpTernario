@@ -6,12 +6,14 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-
+    const preL = Number(prompt("Qual o preço do litro do combustível?"));
+    const quantidade = Number(prompt("Quantos litros são utilizados para ir ao trabalho diariamente?"));
+    const preT = Number(prompt("Qual o preço do transporte público?"));
 
     //Processamento
-
+    const preC = preL * quantidade;
     
     //Saída
-
+    (preC < preT) ? alert("O meio de transporte mais barato é o carro, onde você gastará R$" + preC + " diariamente.") : (preT > custoCarro) ? alert("O meio de transporte mais barato é o transporte público, onde você gastará R$" + preT + " diariamente.")
     
 </script>

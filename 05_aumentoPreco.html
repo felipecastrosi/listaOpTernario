@@ -8,12 +8,12 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-    const preco1 = Number(prompt("Quanto custa o produto?"))
+    const preco1 = Number(prompt("Quanto custa o produto?"));
 
     //Processamento
-    let preco2 = 0
+    let preco2 = 0;
     (preco1 <= 280) ? preco2 = preco1 + (preco1 * 0.2) : (preco1 <= 700) ? preco2 = preco1 + (preco1 * 0.15) : (preco1 <= 1500) ? preco2 = preco1 + (preco1 * 0.1) : preco2 = preco1 + (preco1 * 0.05)
     
     //Saída
-    alert("O preço final é " + preco2)
+    alert("O preço final é " + preco2);
 </script>

@@ -10,11 +10,17 @@
     // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
 
     //Entrada
-
-
+    const agua = Number(prompt("Informe suas despesas relacionadas à água."));
+    const energia = Number(prompt("Informe suas despesas relacionadas à energia elétrica."));
+    const telefone = Number(prompt("Informe suas despesas relacionadas ao telefone."));
+    const mercado = Number(prompt("Informe suas despesas relacionadas ao supermercado."));
+    
+    const salario = Number(prompt("Informe o seu salário."));
     //Processamento
+    const despesas = agua + energia + telefone + mercado;
+    
 
-    
     //Saída
-    
+    (despesas > salario) ? alert("Você sairá individado. Faltam R$" + (despesas - salario) + " para você não sair individado.") : (despesas < salario)
+ ? alert("Você não sairá individado ao final do mês. Sobraram R$" + (salario - despesas) + ".") : alert("Você não sairá individado ao final do mês, mas não sobrará nada depois das despesas.")
 </script>
